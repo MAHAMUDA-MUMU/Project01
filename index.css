@@ -192,17 +192,29 @@ h2{
     display: none;
    }
    .endimg{
-    width: 389px;
-    height: 250px;
+    width: 100%;
+    height: auto;
+   }
+   .rdiv{
+    flex: 2;
+    padding-left: 20px;
+   }
+   h4{
+    font-size: 105em;
+   }
+   p{
+    font-size: 1em;
+    line-height: 1.6;
    }
    .btn2{
-    width: 150px;
-    height: 40px;
+    /* width: 150px;
+    height: 40px; */
     color: white;
     background-color:rgb(253, 64, 95);
     margin: 5px;
-    padding: 15px;
-    border: 2px solid white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
      }
      h4{
         font-size: 30px;
@@ -213,14 +225,17 @@ h2{
         color: #6C6C6C;
      }
      .ediv{
-        margin: 15px;
-        width: 1105px;
-        height: 250px;
-        display: grid;
-        grid-template-columns: auto auto;
-        justify-content:space-evenly ;
+        display: flex;
+        justify-content: space-around;
         align-items: center;
+        padding: 20px;
      }
+     .Idiv{
+        flex: 1;
+        padding-right: 20px;
+     }
+
+
      /* Footer */
      
      .footer{
@@ -257,7 +272,7 @@ h2{
         grid-template-columns: repeat(4,1fr);
     }
     .cardParent{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(3,1fr);
     }
     
    }
@@ -281,7 +296,7 @@ h2{
         grid-template-columns: repeat(3,1fr);
     }
     .cardParent{
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2,1fr);
     }
    }
    @media screen and ( max-width:765px) {
@@ -294,7 +309,25 @@ h2{
     .cardParent{
         grid-template-columns: 1fr;
     }
-    
+    .ediv{
+        flex-direction: column;
+        text-align: center;
+    }
+    .Idiv .rdiv{
+        flex: 1 1 100%;
+        padding: 10px;
+
+    }
+    h4{
+        font-size: 1.2em;
+    }
+    p{
+        font-size: 0.9em;
+    }
+    .btn2{
+        padding: 8px 16px;
+    }
+
    }
    @media screen and ( max-width:445px) {
     body{
@@ -307,6 +340,12 @@ h2{
             padding: 12px;
         }
 
+    }
+    h4{
+        font-size: 1.1em;
+    }
+    p{
+        font-size: 0.85em;
     }
    }
 
