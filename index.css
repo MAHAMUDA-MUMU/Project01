@@ -198,6 +198,7 @@ h2{
    .rdiv{
     flex: 2;
     padding-left: 20px;
+    margin-left: 15%;
    }
    h4{
     font-size: 105em;
@@ -221,7 +222,7 @@ h2{
         margin-bottom: 5px;
      }
      .rdiv p{
-        margin-top: 3px;
+        margin-top:3px;
         color: #6C6C6C;
      }
      .ediv{
@@ -233,6 +234,7 @@ h2{
      .Idiv{
         flex: 1;
         padding-right: 20px;
+        margin-right: 15%;
      }
 
 
@@ -304,9 +306,12 @@ h2{
         flex-direction: column-reverse;
     }
     .logos{
-        grid-template-columns: 1fr;
+        margin: 0 auto ;
+        grid-template-columns: 1fr 1fr;
     }
     .cardParent{
+        margin-left: auto;
+        margin-right: auto;
         grid-template-columns: 1fr;
     }
     .ediv{
